@@ -4,3 +4,5 @@
 - Install tailwind css
 - Install Daisy UI 
 - App NavBar component to App.jsx
+- create a separate NavBar.jsx component file
+- Install react-router-dom
