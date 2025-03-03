@@ -1,7 +1,7 @@
 const Login =()=>{
     return (
         <>
-        Login
+       <h1>Login</h1> 
         </>
     )
 }

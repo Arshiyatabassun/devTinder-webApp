@@ -1,13 +1,16 @@
 
 import { Outlet } from "react-router-dom";
-import Navbar from "./NavBar";
+import NavBar from "./NavBar";
+import Footer from "./Footer";
+
 
 const Body =()=>{
     return(
-        <>
-       <Navbar />
-       <Outlet/>
-        </>
+      <div>
+    <NavBar />
+   <Outlet />
+  <Footer />
+  </div>
     )
 }
 export default Body;

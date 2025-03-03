@@ -1,5 +1,5 @@
 
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { BrowserRouter,Route , Routes} from "react-router-dom";
 import Login from "./Login";
 import Profile from "./Profile";
 import "./index.css" 
@@ -10,10 +10,11 @@ function App() {
   return (
     <>
       <BrowserRouter basename ="/">
-        <Routes >
-            <Route path="/"element={<Body />}></Route>
-            <Route path="/login"element={<Login />}></Route>
-            <Route path="/profile"element={<Profile />}></Route>
+        <Routes>
+            <Route path="/" element={<Body />}>
+            <Route path="/login" element={<Login />}/>
+            <Route path="/profile" element={<Profile />}/>
+            </Route>
 
         </Routes>
         </BrowserRouter>
@@ -23,4 +24,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
