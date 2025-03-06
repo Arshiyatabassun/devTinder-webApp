@@ -1,8 +1,13 @@
+import { useSelector } from "react-redux";
+import ProfileEdit from "./ProfileEdit";
+
 const Profile =()=>{
-    return(
+    const user =useSelector((store)=>store.user)
+    return (user && ( //it will only ne call when the user is present
        <>
-        <h1>profile </h1>
+     <ProfileEdit user={user} />
         </>
     )
+)
 }
 export default Profile;

@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { addUser } from "../utils/userSlice";
 
 
+
 const Body =()=>{
 const dispatch =useDispatch();
 const navigate =useNavigate();
@@ -37,7 +38,7 @@ const userData = useSelector(store =>store.user)
       <div>
     <NavBar />
    <Outlet />
-  <Footer />
+  {/* <Footer /> */}
   </div>
     )
 }
