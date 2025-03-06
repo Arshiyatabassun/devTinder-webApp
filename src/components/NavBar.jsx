@@ -52,7 +52,7 @@ return (
             <span className="badge">New</span>
           </Link>
         </li>
-        <li><a>Settings</a></li>
+        <Link to="/connections">Connections</Link>
         <Link to ="/logout" onClick={handleLogout}>Logout</Link>
       </ul>
     </div>
