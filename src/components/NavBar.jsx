@@ -53,6 +53,7 @@ return (
           </Link>
         </li>
         <Link to="/connections">Connections</Link>
+        <Link to="/requests">Requests</Link>
         <Link to ="/logout" onClick={handleLogout}>Logout</Link>
       </ul>
     </div>

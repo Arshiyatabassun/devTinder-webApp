@@ -1,8 +1,8 @@
 
 
 const UserCard =({user})=>{
-    // console.log(user)
-    const {firstName, lastName ,age ,about,gender ,photoUrl ,skills}=user;
+    console.log(user)
+    const {firstName, lastName ,age ,about,gender ,photoUrl ,skills}= user;
     return (
         <div className="card bg-base-200 w-96 shadow-sm">
   <figure>
