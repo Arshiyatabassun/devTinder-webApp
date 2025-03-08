@@ -11,11 +11,11 @@ const Feed = ()=>{
     console.log(feed)
     const dispatch =useDispatch();  
     const getFeed = async()=>{
-        if(feed) return 
+        if(feed) return;
         try{
             const res = await axios.get(BASE_URL + "/feed",{withCredentials:true})
-            console.log(res)
-            dispatch(addFeed(res?.data?.data))
+            console.log(res.data)
+            dispatch(addFeed(res?.data))
             
         }
     catch(err){
@@ -26,6 +26,8 @@ const Feed = ()=>{
    getFeed();
     },[]);
 
+if(!feed) return ;// if feed is empty dont do anything.
+if(feed.length <= 0 )return <h1 className="flex justify-center my-10">No new users found!!</h1>//remove all the users from the feed
     return (feed && (     
     <div className="flex justify-center my-2">
         <UserCard  user={feed[0]} />
