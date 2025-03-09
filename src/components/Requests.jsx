@@ -12,7 +12,7 @@ console.log(requests)
     const reviewRequest =async(status,_id)=>{
         try{
 
-          const res=  await axios.post(BASE_URL + "/request/review" +status +"/" + _id,{},{withCredentials:true})
+          const res=  await axios.post(BASE_URL + "/request/review/" +status +"/" + _id,{},{withCredentials:true})
           dispatch(removeRequest(_id))
           console.log(res)
         }catch(err){
@@ -57,7 +57,7 @@ console.log(requests)
             
               <div>
               <button className="btn btn-outline btn-primary mx-2" onClick={()=>reviewRequest("rejected",request._id)}>Rejected</button>
-       <button className="btn btn-outline btn-secondary mx-2" onClick={()=>reviewRequest("accepted",request._id)} >Accept</button> 
+       <button className="btn btn-outline btn-secondary mx-2" onClick={()=>reviewRequest("accepted",request._id)} >Accepted</button> 
               </div>
               </div>
                )

@@ -30,16 +30,15 @@ return (
   <div className="flex-1">
     <Link to="/" className="btn btn-ghost text-xl">👩‍💻DevTinder</Link>
   </div>
-  {user && (
-  <div className="flex gap-2">
-    <p>Welcome, {user.firstName}</p>
-    <div className="dropdown dropdown-end mx-6 flex justify-center">
+    {user && (
+  <div className="flex gap-4">
+    <div className="dropdown dropdown-end mx-6 flex item-center">
+    <p className="px-4">Welcome ,{user.firstName}</p>
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         
-        <div className="w-10 rounded-full">
-          
+        <div className="w-10 rounded-full"> 
           <img
-            alt="user photoUrl"
+            alt="photoUrl"
             src={user.photoUrl} />
         </div>
       </div>
