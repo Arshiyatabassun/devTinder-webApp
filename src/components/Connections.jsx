@@ -27,7 +27,7 @@ const dispatch =useDispatch();
 
     if(!connections) return ;
     if(connections.length === 0) return <>
-    <h1>No connections found</h1>
+    <h1 className="mx-auto my-10 justify-center flex text-2xl">No connections found</h1>
     </>
     return(
         <div className="text-center my-10">
@@ -41,7 +41,7 @@ const dispatch =useDispatch();
               
               <div> <img alt="photo"className="w-20 h-20 rounded-full" src={photoUrl}/> </div>
             <div className="text-left mx-4">
-            <h2 className="font-bold text-xl">{firstName + ",  "+ lastName}</h2>
+            <h2 className="font-bold text-xl">{firstName + "  "+ lastName}</h2>
             { age && gender && <p>{age + ", " + gender}</p>}
             <p>{about}</p>
             </div>

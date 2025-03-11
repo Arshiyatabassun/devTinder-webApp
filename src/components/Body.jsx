@@ -38,7 +38,7 @@ const userData = useSelector(store =>store.user)
       <div>
     <NavBar />
    <Outlet />
-  {/* <Footer /> */}
+  <Footer />
   </div>
     )
 }
