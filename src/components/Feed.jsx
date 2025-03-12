@@ -27,7 +27,7 @@ const Feed = ()=>{
     },[]);
 
 if(!feed) return ;// if feed is empty dont do anything.
-if(feed.length <= 0 )return <h1 className="flex justify-center my-10 text-center">No new users found!!</h1>//remove all the users from the feed
+if(feed.length <= 0 )return <h1 className="flex justify-center my-10 text-center text-2xl">No new users found!!</h1>//remove all the users from the feed
     return (feed && (     
     <div className="flex justify-center my-2">
         <UserCard  user={feed[0]} />

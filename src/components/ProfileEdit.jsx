@@ -108,7 +108,7 @@ const ProfileEdit = ({ user }) => {
                 {/* <input type="text" value={about} className="input" onChange={(e)=> setAbout(e.target.value)} /> */}
                 <textarea
                   className="textarea"
-                  placeholder="About"
+                 
                   value={about}
                   onChange={(e) => setAbout(e.target.value)}
                 ></textarea>
@@ -134,6 +134,7 @@ const ProfileEdit = ({ user }) => {
       <UserCard user={{ firstName, lastName, photoUrl, gender, age, about }} />
     </div>
   );
+  
 };
 
 export default ProfileEdit;

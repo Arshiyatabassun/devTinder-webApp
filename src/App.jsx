@@ -12,8 +12,10 @@ import Requests from "./components/Requests";
 
 
 function App() {
+ 
   return (
-    <>
+    <div>
+        
     <Provider store ={appStore}>
       <BrowserRouter basename ="/">
         <Routes>
@@ -30,8 +32,8 @@ function App() {
         </BrowserRouter>
         </Provider>
     
- 
-    </>
+ </div>
+  
   )
 }
 

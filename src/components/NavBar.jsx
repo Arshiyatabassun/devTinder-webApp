@@ -21,7 +21,7 @@ const NavBar = () => {
       setTimeout(() => {
         setShowToast(false);
         return navigate("/login");
-      }, 2000);
+      },1000);
      
     } catch (err) {
       console.log(err.message);
@@ -32,13 +32,13 @@ const NavBar = () => {
     <>
       <div className="navbar bg-base-300 shadow-sm">
         <div className="flex-1">
-          <Link to="/login" className="btn btn-ghost text-xl">
+          <Link to="/" className="btn btn-ghost text-xl">
             🚀DevTinder
           </Link>
         </div>
         {user && (
           <div className="flex gap-2">
-            <p className="px-2">Welcome ,{user.firstName}</p>
+            <p>Welcome ,{user.firstName}</p>
             <div className="dropdown dropdown-end mx-6 flex item-center">
               <div
                 tabIndex={0}

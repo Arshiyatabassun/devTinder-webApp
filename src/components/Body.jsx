@@ -17,6 +17,7 @@ const navigate =useNavigate();
 const userData = useSelector(store =>store.user)
 // console.log(userData)
 
+
   const fetchUser =async()=>{
     if(userData) return ;
     try{
@@ -36,6 +37,9 @@ const userData = useSelector(store =>store.user)
   },[])
     return(
       <div>
+      
+   
+ 
     <NavBar />
    <Outlet />
   <Footer />

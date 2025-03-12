@@ -6,7 +6,7 @@ import { removeFeed } from "../utils/feedSlice";
 
 const UserCard =({user})=>{
   console.log(user)
-  const {_id,firstName, lastName ,age ,about,gender,photoUrl}= user;
+  const {_id,firstName,lastName,age,about,gender,photoUrl}= user;
   const dispatch=useDispatch();
 
     const handleSendRequest = async(status,userId) =>{
@@ -23,7 +23,7 @@ const UserCard =({user})=>{
 
     }
     return (
-        <div className="card  rounded-2xl mx-20 bg-base-200 w-90 my-6 shadow-2xl  text-base-200  bg-blue-50" >
+        <div className="card  rounded-2xl mx-20 bg-base-200 w-96 my-5 shadow-2xl  text-base-200  bg-blue-50" >
  
   <figure>
     <img
@@ -34,7 +34,7 @@ const UserCard =({user})=>{
   <div className="card-body">
     <h2 className="card-title font-serif">{firstName +"  "+lastName}</h2>
     {age && gender && <h2>{age + ", "+ gender}</h2>}
-    <span>{about}</span>
+    <p>{about}</p>
     {/* <p>{skills}</p> */}
   
     <div className="card-actions justify-end my-4">
